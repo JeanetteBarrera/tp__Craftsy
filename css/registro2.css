@@ -1,0 +1,114 @@
+/*variables*/
+:root {
+    --colorNaranja : #e65100;
+}
+/*inicializo*/
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+li {
+    list-style: none;
+    display: inline;
+    padding: 0 10px;
+}
+body {
+    background-image: url("../images/bg-2.png");
+}
+.registro {
+    width: 100%;
+    max-width: 1140px;
+}
+.registro header {
+    background-color:var(--colorNaranja);
+    width: 100%;
+    max-width: 1140px;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 10;
+    top:0;
+    left:0;
+}
+.registro header img {
+    float: left;
+}
+.registro header .nav-options {
+    display: inline-block;
+    padding: 10px 0;
+}
+.registro header .nav-login {
+    float: right;
+    padding: 10px 0;
+}
+.registro main {
+    margin-top: 100px;
+}
+.registro main .formulario {
+    width: 100%;
+    max-width: 350px;
+    padding: 30px 10px;   
+}
+.registro main .formulario h1 {
+    text-transform: uppercase ;
+    text-align: center;
+    padding: 20px 0;
+}
+.registro main .formulario div {
+    width: 100%;
+    padding: 5px 0;
+}
+.registro main .formulario div h4, p{
+    padding: 5px 0;
+}
+.registro main .formulario .datos p {
+    color: red;
+}
+.registro main .formulario .datos input {
+    width: 100%;
+    height: 30px;
+}
+.registro main .formulario div textarea {
+    width: 200px;
+    height: 100px;
+}
+.registro main .formulario  div button {
+    width: 120px;
+    height: 30px;
+    background-color:#3d8dbc;
+    color: white;
+    font-weight: 700;
+    border-radius: 7px;
+}
+.registro main .formulario .buttons p {
+    padding: 10px 0;
+}
+/*VERSION PARA TABLETS Y ESCRITORIO*/
+@media only screen and (min-device-width : 460px) {
+    .registro {
+        padding: 20px 10px;
+       /* margin: 20px 10px;*/
+    }.registro header {
+        position: relative;
+        padding: 5px 10px;
+        margin-bottom: 20px;
+    }
+    .registro header .nav-options {
+        float: left;
+    }
+    .registro main {
+        margin-top: 0;
+    }
+    .registro main .formulario {
+        padding: 30px 0;
+    }
+}

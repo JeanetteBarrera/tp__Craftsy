@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login Craftsy</title>
+        <link rel="stylesheet" href="./css/registro2.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="registro">
+            <header>
+                <img src="./images/logo.png" alt="logo">
+                <nav>
+                    <ul class="nav-login">
+                        <li><a href="./login.html">login</a></li>
+                        <li><a href="./registro.html">registro</a></li>
+                    </ul>
+                    <ul class="nav-options">
+                        <li><a href="">smarphones</a></li>
+                        <li><a href="">tablets</a></li>
+                        <li><a href="">computadoras</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <form action="" method="POST" class="formulario">
+                        <h1>registrate</h1>
+                        <div class="datos">
+                            <h4>Nombre</h4>
+                            <input type="text" name="nombre" required="" placeholder="  Nombre">
+                            <p>Obligatorio</p>
+                        </div>
+                        <div class="datos">
+                            <h4>Email</h4>
+                            <input type="email" name="email" required="" placeholder="  E-mail">
+                            <p>Obligatorio</p>
+                        </div>
+                        <div class="datos">
+                            <h4>Contraseña</h4>
+                            <input type="password" name="contraseña" required="" placeholder="  Contraseña">
+                            <p>Obligatorio</p>
+                        </div>
+                        <div>
+                            <h4>Pais de Nacimiento</h4>
+                            <select name="pais">
+                                <option value="">Seleccione aquí</option>
+                                <option value="br">Brasil</option>
+                                <option value="bl">Bolivia</option>
+                                <option value="pr">Peru</option>
+                                <option value="cl">Colombia</option>
+                                <option value="po">Puerto Rico</option>
+                                <option value="ur">Uruguay</option>
+                                <option value="pg">Paraguay</option>
+                                <option value="ar">Argentina</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h4>Genero</h4>
+                            <input type="radio" name="genero" value="masculino"><label> Masculino</label>
+                            <input type="radio" name="genero" value="femenino"><label> Femenino</label>
+                            <input type="radio" name="genero" value="indefinido"><label> Prefiero no decirlo</label>
+                        </div>
+                        <div>
+                            <h4>Hobbies</h4>
+                            <input type="checkbox" name="hobbies" value="guitarra"><label> Guitarra</label>
+                            <input type="checkbox" name="hobbies" value="futbol"><label> Futbol</label>
+                            <input type="checkbox" name="hobbies" value="tenis"><label> Tenis</label>
+                            <input type="checkbox" name="hobbies" value="programacion"><label> Programación</label>
+                        </div>
+                        <div>
+                            <h4>Dejános tus comentarios</h4>
+                            <textarea name="mensaje"></textarea>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="si"><label>Acepto los terminos y condiciones</label>
+                        </div>
+                        <div class="buttons">
+                            <p>Botón enviar etiqueta "input"</p>
+                            <input type="submit" value="Registrarme">
+                            <input type="submit" value="Cancelar">
+                        </div>
+                        <div class="buttons">
+                            <p>Botones enviar con etiqueta "button"</p>
+                            <button type="submit">Registrarme</button>
+                            <button type="submit">Cancelar</button>
+                        </div>
+                </form>
+            </section>
+        </main>
+        </div>
+    </body>
+</html>

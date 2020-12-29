@@ -1,0 +1,181 @@
+/*variables*/
+:root {
+    --colorNaranja : #e65100;
+}
+/*inicializo*/
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+li {
+    list-style: none;
+    display: inline;
+    padding: 0 10px;
+}
+body {
+    background-image: url("../images/bg-2.png");
+}
+.home {
+    width: 100%;
+    max-width: 1140px;
+    overflow: hidden;
+    /*margin: 10px;*/
+}
+/*HEADER*/
+.home header {
+    background-color:var(--colorNaranja);
+    width: 100%;
+    max-width: 1140px;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 10;
+    top:0;
+    left:0;
+}
+.home header img {
+    float: left;
+}
+.home header .nav-options {
+    display: none;
+}
+.home header .nav-login {
+    padding: 10px 0;
+    float:right;
+}
+.home header .nav-mobile {
+    display: inline-block;
+    padding: 10px 0;
+}
+/*MAIN*/
+.home main {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 800px;
+    margin-top:100px;
+}
+.home main .productos {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.home main .productos .foto {
+    width: 100%;
+}
+.home main .productos .icon {
+    position: absolute;
+    top:10pxs;
+    right: 20px;
+}
+.home main .productos h2, p {
+    margin: 10px 0;
+}
+.home main .productos button {
+    width: 70px;
+    height: 30px;
+    background-color: var(--colorNaranja);
+}
+/*ASIDE*/
+.home aside section {
+    margin-bottom: 20px;
+}
+.home aside .tutoriales {
+    width: 100%;
+}
+.home aside h2 {
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+.home aside .tutoriales article {
+    position: relative;
+    padding: 5px;
+    background-color: #ffffff;
+    margin-bottom: 3px;
+    overflow: hidden;
+}
+.home aside .tutoriales article img.article {
+    width: 40%;
+    padding-right: 5px;
+}
+.home aside .tutoriales article a {
+    color:#000000;
+    text-transform:initial;
+    font-weight: 400;
+    width: 50%;
+    float: right;
+    padding-top: 25px;
+}
+.home aside .tutoriales article .icon {
+    position: absolute;
+    top:0;
+    right: 10px;
+}
+.home aside .publicidad  {
+    width: 100%;
+    max-width: 320px;
+}
+.home aside .publicidad div {
+    background-color: #ffffff;
+}
+.home aside .publicidad div img {
+    width: 100%;
+    padding: 5px;
+}
+
+/*VERSION PARA TABLETS*/
+@media only screen and (min-device-width : 460px) {
+    .home {
+        padding: 20px 10px;
+       /* margin: 20px 10px;*/
+    }.home header {
+        position: relative;
+        padding: 5px 10px;
+        margin-bottom: 20px;
+    }
+    .home header .nav-mobile {
+        float: left;
+    }
+    .home main {
+        overflow: hidden;
+        margin:0 0 20px 0;
+    }
+    .home main .productos {
+        float: left;
+        width: 50%;
+        margin: 0;
+    }
+} 
+/*VERSION PARA ESCRITORIO*/
+@media only screen and (min-device-width : 768px) {
+    .home {
+        margin: 20px auto;
+        padding: 0;
+    }
+    .home main {
+        float: left;
+        width: calc(71.06% - 10px)
+    }
+    .home main .productos {
+        max-height: 390px;
+    }
+    .home aside {
+        width:28.94%;
+        max-width: 320px;
+        float: right;
+    }
+    .home aside .tutoriales article a {
+        padding: 5px;
+    }
+}
